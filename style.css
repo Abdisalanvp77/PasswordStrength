@@ -1,15 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgba(155, 89, 182, 0.7);
-  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+}
+
+.background {
+  background: url('https://images.unsplash.com/photo-1621001595230-b09a6f69d3d8?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  /* z-index: -1; */
+  filter: blur(20px);
+}
+
+.bg-white {
+  z-index: 1;
 }
